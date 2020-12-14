@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script data-ad-client="ca-pub-2292183118251186" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css')}}">
+    <title></title>
+</head>
+<body>
+  <header>
+        <style>
+</style>
+    <nav>
+      <ul>
+          <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/Wiki">Wiki</a>
+      </li>
+      <li>
+        <a href="/About">About</a>
+      </li>
+      <li>
+        <a href="/Feedback">Feedback</a>
+      </li>
+      </ul>
+
+    </nav>
+  </header>
+  <main>
+{% block content %} {% endblock%}
+
+</main>
+<div class="footer" >
+            <p style ="text-align: center"><a href="https://www.dropbox.com/home/ArmyTactics" >Download</a> and play the game (pre-alpha)</p>
+
+            <a href="https://www.youtube.com/channel/UCztp0zx9-67Js249U2SHJyg?view_as=subscriber">
+                <img src="{{ url_for('static',filename='images/Youtube.png')}}" width="25" height="25" alt="Youtube"></img>
+            </a>
+
+            <a href="https://twitter.com/?lang=en-gb">
+                <img src="{{ url_for('static',filename='images/Twitter.png')}}" width="25" height="25" alt="Youtube"></img>
+            </a>
+
+            <a href="https://www.instagram.com/">
+                <img src="{{ url_for('static',filename='images/Instagram.png')}}" width="25" height="25" alt="Youtube"></img>
+            </a>
+
+
+    </div>
+</body>
+</html>

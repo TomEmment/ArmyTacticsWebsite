@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+ {% block content %}
+
+<form action="#" method="post">
+    <p>Name:</p>
+    <p><input type="text" name ="Name" /></p>
+    <p>On a scale of 1-10 how would you rate the game:</p>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="10" value="5" name = "Fun">
+    </div>
+    <p>&nbsp;&nbsp;1 2 3 4 5 6 7 8 9 10</p>
+    <p>How much would you pay for the game:</p>
+    <p>£ <input size="5" type="text" name ="Cost" /></p>
+    <p>General feedback:</p>
+    <p><input style="height:200px;width:500px;"  type="text" name ="Feedback" /></p>
+     {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages %}
+            <p>{{msg}}</p>
+        {% endfor %}
+    {% endif %}
+ {% endwith %}
+    <p><input type="submit" name ="submit" /></p>
+</form>
+{% endblock %}

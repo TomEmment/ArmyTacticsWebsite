@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+
+
+
+
+
+
+ {% block content %}
+
+
+<section>
+    <img style = align="left" src="{{ url_for('static',filename='images/Icon.png')}}" width="135" height="165" alt="Logo"></img>
+    <img src="{{ url_for('static',filename='images/Seperator.png')}}"  alt="Logo"></img>
+
+        <center>
+            <article >
+    <h1>Welcome to Army Tactics</h1>
+      <p >Army Tactics is a passion project that combines elements of games such as Total war,
+      Mini warriors, Mount and Blade, Hearthstone, Team Fight Tactics and many more...</p>
+    </article>
+    </section>
+<section style = "width: 1300px; margin: 0 auto;">
+    <article >
+      <p style = "text-align: center";>Army Tactics consists of 2 main game modes arena and campagin.
+      Arena will have you choosing your army and battleing it out against the computer in rounds
+      of increasing difficulty, can you make the right choices and outsmart the computer?
+      The rouge-like campagin will challenge you to keep your hero alive as you try to
+      make it as far along the map as you can. There are many encounters, units to recruit
+      and even some special suprises you will find along the way.</p>
+
+    </article>
+    </section>
+<section>
+    <article>
+      <p style = "text-align: center" >Gameplay consists of exciting turn based combat
+      where you will have to think about positioning, unit abilities and unit stats, stratergy is the name of the game.
+          Arena will have you focusing on the units and their abilites while campagin has a bit more depth.
+      You will be rewarded with extra resources upon battle completions which you can use to recruit units and
+      buy items but be smart about your choices as you move along the map enemies will become stronger and harder to beat.
+          If you lose your main character its all over.
+      </p>
+
+    </article>
+    </section>
+<p></p>
+<section style = "width: 1300px; margin: 0 auto;">
+    <article >
+      <p style = "text-align: center">Army Tactics is being developed by me and me alone.
+      All feedback and interest are more than appreciated and if you have any ideas or suggestions
+      please feel free to get in contact with me. Art is produced by Katie Bayliss, you can find a link
+      to her work here, I would highly recommend you check out her stuff :).</p>
+
+    </article>
+    </section>
+    </center>
+      <img src="{{ url_for('static',filename='images/SeperatorRotate.png')}}"  alt="Logo"></img>
+<img src="{{ url_for('static',filename='images/Icon.png')}}" width="135" height="165" alt="Logo"></img>
+{% endblock %}
